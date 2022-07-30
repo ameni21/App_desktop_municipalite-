@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="843.0" prefWidth="1322.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.OutilProjet1">
+   <children>
+      <Label layoutX="408.0" layoutY="29.0" prefHeight="36.0" prefWidth="387.0" text="Outil asscociés à projet" textFill="#e41616">
+         <font>
+            <Font name="Arial Bold Italic" size="31.0" />
+         </font>
+      </Label>
+      <VBox layoutX="24.0" layoutY="96.0" prefHeight="379.0" prefWidth="394.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+               <children>
+                  <Label text="Id Projet">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="labprojet" prefHeight="31.0" prefWidth="221.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="65.0">
+               <children>
+                  <Label text="Id Outil">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="laboutil" prefHeight="31.0" prefWidth="219.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="65.0">
+               <children>
+                  <Label text="Quntité">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="labquantite" prefHeight="31.0" prefWidth="218.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+               <children>
+                  <Label text="Date debut">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="labdebut" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="60.0">
+               <children>
+                  <Label text="Date fin">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="labfin" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="effecte" mnemonicParsing="false" onAction="#effectuer" text="Affectuer un outil" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <TableView fx:id="projet" layoutX="221.0" layoutY="493.0" onMouseClicked="#onMouseProjet" prefHeight="289.0" prefWidth="229.0">
+        <columns>
+          <TableColumn fx:id="cnum" prefWidth="95.0" text="Num Projet" />
+          <TableColumn fx:id="cnom" prefWidth="133.0" text="Nom Projet" />
+        </columns>
+      </TableView>
+      <TableView fx:id="Outils" layoutX="719.0" layoutY="484.0" onMouseClicked="#onMouseOutil" prefHeight="289.0" prefWidth="346.0">
+        <columns>
+          <TableColumn fx:id="cido" prefWidth="75.0" text="Id Outil" />
+          <TableColumn fx:id="cnomo" prefWidth="133.0" text="Nom Outil" />
+            <TableColumn fx:id="cquantite" prefWidth="138.0" text="Quntité" />
+        </columns>
+      </TableView>
+      <TableView fx:id="associe" layoutX="526.0" layoutY="96.0" onMouseClicked="#onMouseAssocie" prefHeight="283.0" prefWidth="593.0">
+        <columns>
+          <TableColumn fx:id="cnpa" prefWidth="110.0" text="Num projet" />
+          <TableColumn fx:id="cidoa" prefWidth="85.0" text="Id outil" />
+            <TableColumn fx:id="cqa" prefWidth="110.0" text="Quntite" />
+            <TableColumn fx:id="cdate1" prefWidth="124.0" text="Date debut" />
+            <TableColumn fx:id="cdate2" prefWidth="163.0" text="Date fin" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

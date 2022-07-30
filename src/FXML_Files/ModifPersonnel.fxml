@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="527.0" prefWidth="682.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ModifierPersonnelController">
+   <children>
+      <AnchorPane layoutX="-111.0" layoutY="-150.0" prefHeight="200.0" prefWidth="200.0" />
+      <Text layoutX="54.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" />
+      <Text layoutX="55.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom" />
+      <Text layoutX="55.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prénom" />
+      <Text layoutX="55.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date Naissance" />
+      <Text layoutX="413.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Domaine" />
+      <Text layoutX="413.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Grade" />
+      <Text layoutX="413.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adresse" />
+      <Text layoutX="54.0" layoutY="363.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Salaire" />
+      <Text layoutX="413.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sexe" />
+      <TextField fx:id="idc" layoutX="54.0" layoutY="133.0" />
+      <TextField fx:id="nomc" layoutX="54.0" layoutY="196.0" />
+      <TextField fx:id="prenomc" layoutX="54.0" layoutY="254.0" />
+      <TextField fx:id="gradc" layoutX="413.0" layoutY="312.0" />
+      <TextField fx:id="salc" layoutX="54.0" layoutY="369.0" />
+      <TextField fx:id="adrc" layoutX="413.0" layoutY="133.0" />
+      <TextField fx:id="domc" layoutX="413.0" layoutY="196.0" />
+      <TextField fx:id="sexc" layoutX="413.0" layoutY="254.0" />
+      <Text layoutX="230.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modifier Personnel" textAlignment="CENTER" wrappingWidth="168.345703125">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="val" layoutX="388.0" layoutY="448.0" mnemonicParsing="false" onAction="#valider" prefHeight="31.0" prefWidth="81.0" text="Valider" />
+      <TextField fx:id="numtc" layoutX="413.0" layoutY="369.0" />
+      <Text layoutX="413.0" layoutY="363.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Numero Télephone" />
+      <TextField fx:id="datec" layoutX="54.0" layoutY="312.0" promptText="dd/mm/yyyy" />
+      <Button fx:id="ret" layoutX="203.0" layoutY="448.0" mnemonicParsing="false" onAction="#retour" prefHeight="31.0" prefWidth="81.0" text="Retour" />
+      <Label fx:id="conf" layoutX="236.0" layoutY="411.0" prefHeight="17.0" prefWidth="157.0" />
+   </children>
+</AnchorPane>

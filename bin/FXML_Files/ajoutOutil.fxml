@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="589.0" prefWidth="700.0" style="-fx-background-color: #ffcc99;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AjoutOutil">
+   <children>
+      <Label  layoutX="182.0" layoutY="349.0" text="Type:">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="175.0" layoutY="272.0" text="Quantité:">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="182.0" layoutY="197.0" prefHeight="36.0" prefWidth="89.0" text="Nom:" textFill="#2e3232">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="tfnom" layoutX="272.0" layoutY="203.0" prefHeight="25.0" prefWidth="217.0" />
+      <JFXTextField fx:id="tfqantite" layoutX="279.0" layoutY="271.0" prefHeight="25.0" prefWidth="208.0" />
+      <JFXButton fx:id="confirmer" layoutX="191.0" layoutY="462.0" onAction="#confirmer" prefHeight="44.0" prefWidth="132.0" style="-fx-background-color: grey;" text="Confirmer" textFill="#f8f7f7" />
+      <JFXButton fx:id="annller" layoutX="370.0" layoutY="462.0" onAction="#annuller" prefHeight="44.0" prefWidth="132.0" style="-fx-background-color: grey;" text="retour" textFill="#f8f7f7" />
+      <ImageView fx:id="icone" fitHeight="119.0" fitWidth="116.0" layoutX="312.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/outil.png" />
+         </image>
+      </ImageView>
+      <JFXComboBox fx:id="utilise" layoutX="279.0" layoutY="343.0" prefHeight="36.0" prefWidth="217.0">
+         <items>
+         <FXCollections fx:factory="observableArrayList">
+            <String fx:value="rentable" />
+            <String fx:value="non rentable" />
+
+
+         </FXCollections>
+
+         </items>
+      </JFXComboBox>
+   </children>
+</AnchorPane>

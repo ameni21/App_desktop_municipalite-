@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane alignment="center" hgap="10" prefHeight="512.0" prefWidth="654.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <AnchorPane prefHeight="532.0" prefWidth="784.0" GridPane.columnIndex="1">
+            <children>
+                <Text layoutX="44.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" />
+                <Text layoutX="45.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom" />
+                <Text layoutX="45.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prénom" />
+                <Text layoutX="45.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date Naissance" />
+                <Text layoutX="403.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Domaine" />
+                <Text layoutX="403.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Grade" />
+                <Text layoutX="403.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adresse" />
+                <Text layoutX="44.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Salaire" />
+                <Text layoutX="403.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sexe" />
+                <TextField fx:id="t1" layoutX="44.0" layoutY="123.0" />
+                <TextField fx:id="t2" layoutX="44.0" layoutY="186.0" />
+                <TextField fx:id="t3" layoutX="44.0" layoutY="244.0" />
+                <TextField fx:id="t9" layoutX="403.0" layoutY="302.0" />
+                <TextField fx:id="t5" layoutX="44.0" layoutY="359.0" />
+                <TextField fx:id="t6" layoutX="403.0" layoutY="123.0" />
+                <TextField fx:id="t7" layoutX="403.0" layoutY="186.0" />
+                <TextField fx:id="t8" layoutX="403.0" layoutY="244.0" />
+                <Text layoutX="223.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajouter Personnel" textAlignment="CENTER">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Text>
+                <Button fx:id="t11" layoutX="354.0" layoutY="438.0" mnemonicParsing="false" onAction="#pressme" prefHeight="31.0" prefWidth="81.0" text="Valider" />
+                <TextField fx:id="t10" layoutX="403.0" layoutY="359.0" />
+                <Text layoutX="403.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Numero Télephone" />
+                <Label fx:id="t42" layoutX="44.0" layoutY="327.0" textFill="RED">
+                    <font>
+                        <Font size="10.0" />
+                    </font></Label>
+                <Label fx:id="t32" layoutX="44.0" layoutY="267.0" textFill="RED">
+                    <font>
+                        <Font size="10.0" />
+                    </font></Label>
+                <Label fx:id="t22" layoutX="44.0" layoutY="208.0" textFill="RED">
+                    <font>
+                        <Font size="10.0" />
+                    </font></Label>
+                <Label fx:id="t12" layoutX="44.0" layoutY="148.0" textFill="RED">
+                    <font>
+                        <Font size="10.0" />
+                    </font></Label>
+                <Label fx:id="t62" layoutX="405.0" layoutY="148.0" textFill="RED">
+                    <font>
+                        <Font size="10.0" />
+                    </font></Label>
+                <Label fx:id="t72" layoutX="403.0" layoutY="208.0" textFill="RED">
+                    <font>
+                        <Font size="10.0" />
+                    </font></Label>
+                <Label fx:id="t82" layoutX="401.0" layoutY="267.0" textFill="RED">
+                    <font>
+                        <Font size="10.0" />
+                    </font></Label>
+                <Label fx:id="t92" layoutX="401.0" layoutY="327.0" textFill="RED">
+                    <font>
+                        <Font size="10.0" />
+                    </font></Label>
+                <Label fx:id="t102" layoutX="401.0" layoutY="386.0" textFill="RED">
+                    <font>
+                        <Font size="10.0" />
+                    </font></Label>
+                <Label fx:id="t52" layoutX="44.0" layoutY="386.0" textFill="RED">
+                    <font>
+                        <Font size="10.0" />
+                    </font></Label>
+                <Label fx:id="te" layoutX="187.0" layoutY="409.0" textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+            <TextField fx:id="t4" layoutX="44.0" layoutY="302.0" promptText="dd/mm/yyyy" />
+            <Button layoutX="153.0" layoutY="438.0" mnemonicParsing="false" onAction="#retour" prefHeight="31.0" prefWidth="81.0" text="retour" />
+            </children>
+        </AnchorPane>
+    </children>
+</GridPane>

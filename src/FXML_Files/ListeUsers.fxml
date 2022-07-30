@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="510.0" prefWidth="662.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.listeUserController">
+   <children>
+                              <Label layoutX="237.0" layoutY="8.0" prefHeight="50.0" prefWidth="252.0" text="Liste des utilisateurs " textAlignment="CENTER" textFill="#e4910b" wrapText="true">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="btnann" layoutX="100.0" layoutY="430.0" mnemonicParsing="false" onAction="#exit" prefHeight="36.0" prefWidth="110.0" text="Retour" />
+                              <Button fx:id="btnajou" layoutX="476.0" layoutY="430.0" mnemonicParsing="false" onAction="#Ajouter" prefHeight="36.0" prefWidth="110.0" text="Ajouter" />
+                              <Label fx:id="conf" layoutX="227.0" layoutY="430.0" prefHeight="18.0" prefWidth="350.0" />
+                              <Button fx:id="btnCher" layoutX="377.0" layoutY="58.0" mnemonicParsing="false" onAction="#Chercher" text="Chercher" />
+                              <TableView fx:id="tableUsers" layoutX="20.0" layoutY="103.0" prefHeight="296.0" prefWidth="611.0">
+                                 <columns>
+                                    <TableColumn fx:id="colid" prefWidth="128.80006408691406" text="ID" />
+                                    <TableColumn fx:id="colrole" prefWidth="134.39987182617188" text="Role" />
+                                    <TableColumn fx:id="colmdp" prefWidth="180.79998779296875" text="Mot de pass" />
+                                    <TableColumn fx:id="colnom" prefWidth="166.40008544921875" text="Nom" />
+                                 </columns>
+                              </TableView>
+                              <Button fx:id="btnsupp" layoutX="227.0" layoutY="430.0" mnemonicParsing="false" onAction="#Supprimer" prefHeight="36.0" prefWidth="110.0" text="Supprimer" />
+                              <ComboBox fx:id="rolech" layoutX="227.0" layoutY="58.0" prefWidth="150.0" promptText="Role" />
+                              <Button fx:id="btnmod" layoutX="354.0" layoutY="430.0" mnemonicParsing="false" onAction="#Modifier" prefHeight="36.0" prefWidth="110.0" text="Modifier" />
+   </children>
+</AnchorPane>

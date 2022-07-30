@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ajouter_doleances">
+   <children>
+      <Button fx:id="confirmer" layoutX="252.0" layoutY="339.0" mnemonicParsing="false" onAction="#confirmer" prefHeight="25.0" prefWidth="84.0" text="confirmer" />
+      <TextField fx:id="Aadresse" layoutX="363.0" layoutY="51.0" />
+      <TextField fx:id="Adate" layoutX="363.0" layoutY="116.0" />
+      <TextField fx:id="Anom" layoutX="103.0" layoutY="116.0" />
+      <TextField fx:id="Aprenom" layoutX="103.0" layoutY="175.0" />
+      <TextField fx:id="Aemail" layoutX="363.0" layoutY="175.0" />
+      <TextField fx:id="Anumtel" layoutX="103.0" layoutY="252.0" />
+      <TextField fx:id="Adescription" layoutX="369.0" layoutY="252.0" />
+      <TextField fx:id="Acin" layoutX="93.0" layoutY="51.0" />
+      <Label layoutX="43.0" layoutY="120.0" text="Nom" />
+      <Label layoutX="35.0" layoutY="179.0" text="Prenom" />
+      <Label layoutX="291.0" layoutY="55.0" text="Adresse" />
+      <Label layoutX="48.0" layoutY="256.0" text="Numtel" />
+      <Label layoutX="300.0" layoutY="120.0" text="date" />
+      <Label layoutX="48.0" layoutY="55.0" text="Cin" />
+      <Label layoutX="295.0" layoutY="179.0" text="e_mail" />
+      <Label layoutX="294.0" layoutY="256.0" text="Description" />
+      <Button fx:id="retour" layoutX="22.0" layoutY="14.0" mnemonicParsing="false" onAction="#retour" text="Retour" />
+   </children>
+</AnchorPane>

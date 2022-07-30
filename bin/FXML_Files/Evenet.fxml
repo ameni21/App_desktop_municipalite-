@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="858.0" prefWidth="1282.0"  xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.EventController">
+   <children>
+      <TableView fx:id="table" layoutX="14.0" layoutY="110.0" onMouseClicked="#onMouseClicked" prefHeight="251.0" prefWidth="1254.0">
+        <columns>
+          <TableColumn fx:id="cid" prefWidth="75.0" text="Id" />
+          <TableColumn fx:id="cnom" prefWidth="107.0" text="Nom" />
+            <TableColumn fx:id="clocalisation" prefWidth="185.0" text="localisation" />
+            <TableColumn fx:id="cdebut" prefWidth="194.0" text="date_debut" />
+            <TableColumn fx:id="cfin" prefWidth="225.0" text="date_fin" />
+            <TableColumn fx:id="cbudget" prefWidth="203.0" text="budget" />
+            <TableColumn fx:id="cdescription" prefWidth="264.0" text="description" />
+        </columns>
+      </TableView>
+      <JFXTextField fx:id="lab" focusColor="#2754c6" layoutX="505.0" layoutY="46.0" />
+      <Button fx:id="rech" layoutX="711.0" layoutY="53.0" mnemonicParsing="false" onAction="#rechercher" text="Rechercher" textFill="#292a2c" />
+      <Button fx:id="ajout" layoutX="203.0" layoutY="793.0" mnemonicParsing="false" onAction="#ajouter" prefHeight="31.0" prefWidth="120.0" text="Ajouter" textFill="#3b3f4a" />
+      <Button fx:id="modif" layoutX="564.0" layoutY="793.0" mnemonicParsing="false" onAction="#modifier" prefHeight="31.0" prefWidth="110.0" text="Modifier" textFill="#45484d" />
+      <TableView fx:id="employe" layoutX="78.0" layoutY="449.0" prefHeight="314.0" prefWidth="330.0">
+        <columns>
+          <TableColumn fx:id="cide" prefWidth="100.0" text="Id" />
+            <TableColumn fx:id="cnome" prefWidth="100.0" text="Nom" />
+            <TableColumn fx:id="cprenome" prefWidth="129.0" text="Prénom" />
+        </columns>
+      </TableView>
+      <TableView fx:id="outil" layoutX="494.0" layoutY="449.0" prefHeight="304.0" prefWidth="311.0">
+        <columns>
+          <TableColumn fx:id="cido" minWidth="0.0" prefWidth="136.0" text="Id" />
+            <TableColumn fx:id="cnomo" prefWidth="171.0" text="Nom" />
+        </columns>
+      </TableView>
+      <TableView fx:id="vehicule" layoutX="925.0" layoutY="438.0" prefHeight="304.0" prefWidth="229.0">
+        <columns>
+          <TableColumn fx:id="Cmat" prefWidth="127.0" text="Matricule" />
+            <TableColumn fx:id="Cmarque" prefWidth="99.0" text="Marque" />
+        </columns>
+      </TableView>
+      <Button fx:id="supp" layoutX="979.0" layoutY="787.0" mnemonicParsing="false" onAction="#supprimer" prefHeight="31.0" prefWidth="120.0" text="Supprimer" textFill="#33363c" />
+      <Label layoutX="145.0" layoutY="385.0" text="Employés" textFill="#2d2e32">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="590.0" layoutY="391.0" text="Outils" textFill="#141517">
+         <font>
+            <Font name="Arial Bold Italic" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="964.0" layoutY="385.0" text="Véhicules" textFill="#393b40">
+         <font>
+            <Font name="Arial Bold Italic" size="35.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

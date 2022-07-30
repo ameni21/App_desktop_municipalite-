@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="890.0" prefWidth="1236.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.VehiculeProjet1">
+   <children>
+      <Label layoutX="397.0" layoutY="34.0" prefHeight="32.0" prefWidth="379.0" text="Véhicule associes à projet" textFill="#e40707">
+         <font>
+            <Font name="Arial Bold Italic" size="27.0" />
+         </font>
+      </Label>
+      <VBox layoutX="38.0" layoutY="144.0" prefHeight="367.0" prefWidth="365.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+               <children>
+                  <Label text="Id projet">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="labIdp" prefHeight="31.0" prefWidth="216.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="28.0">
+               <children>
+                  <Label text="Id véhicule">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="labidv" prefHeight="31.0" prefWidth="219.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <Label text="Date debut">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="labdebut" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+               <children>
+                  <Label text="Date fin">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="labfin" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="affect" mnemonicParsing="false" onAction="#affectuer" text="Affecter véhicule" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <TableView fx:id="associe" layoutX="504.0" layoutY="118.0" onMouseClicked="#onMouceAssocie" prefHeight="357.0" prefWidth="516.0">
+        <columns>
+          <TableColumn fx:id="cidpa" prefWidth="75.0" text="Id Projet" />
+          <TableColumn fx:id="cidva" prefWidth="163.0" text="Id véhicule" />
+            <TableColumn fx:id="cdebut" prefWidth="119.0" text="Date debut" />
+            <TableColumn fx:id="cfin" prefWidth="158.0" text="Date fin" />
+        </columns>
+      </TableView>
+      <TableView fx:id="projet" layoutX="180.0" layoutY="547.0" onMouseClicked="#onMouseProjet" prefHeight="301.0" prefWidth="365.0">
+        <columns>
+          <TableColumn fx:id="cnum" prefWidth="175.0" text="Num projet" />
+          <TableColumn fx:id="cnom" prefWidth="188.0" text="Nom Projet" />
+        </columns>
+      </TableView>
+      <TableView fx:id="vehiculess" layoutX="723.0" layoutY="552.0" onMouseClicked="#onMouseVehicule" prefHeight="291.0" prefWidth="365.0">
+        <columns>
+          <TableColumn fx:id="mat" prefWidth="162.0" text="Matricule" />
+          <TableColumn fx:id="marque" prefWidth="202.0" text="Marque" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

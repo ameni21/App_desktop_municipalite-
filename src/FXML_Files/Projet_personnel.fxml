@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="829.0" prefWidth="1262.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PersonneProjet">
+   <children>
+      <Label layoutX="354.0" layoutY="33.0" prefHeight="32.0" prefWidth="452.0" text="Personnel associes a projet " textFill="#dd210c">
+         <font>
+            <Font name="Arial Bold Italic" size="28.0" />
+         </font>
+      </Label>
+      <VBox layoutX="71.0" layoutY="140.0" prefHeight="379.0" prefWidth="334.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <Label prefHeight="30.0" prefWidth="128.0" text="Num Projet" textFill="#280404">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="labprojet" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+               <children>
+                  <Label text="Id Personnel">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="labper" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="45.0">
+               <children>
+                  <Label prefHeight="30.0" prefWidth="145.0" text="date début">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="labdebut" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="55.0">
+               <children>
+                  <Label prefHeight="21.0" prefWidth="80.0" text="Date fin">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="labfin" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="aff" mnemonicParsing="false" onAction="#affectuer" text="Affecter Personnel" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <TableView fx:id="projet" layoutX="467.0" layoutY="105.0" onMouseClicked="#onMouseProjet" prefHeight="362.0" prefWidth="249.0">
+        <columns>
+          <TableColumn fx:id="cnum" prefWidth="108.0" text="Num projet" />
+          <TableColumn fx:id="cprojet" prefWidth="140.0" text="nom projet" />
+        </columns>
+      </TableView>
+      <TableView fx:id="personnel" layoutX="806.0" layoutY="98.0" onMouseClicked="#onMoucePersonnel" prefHeight="369.0" prefWidth="289.0">
+        <columns>
+          <TableColumn fx:id="cid" prefWidth="91.0" text="Id" />
+          <TableColumn fx:id="cnom" prefWidth="84.0" text="Nom" />
+            <TableColumn fx:id="cprenom" prefWidth="113.0" text="prenom" />
+        </columns>
+      </TableView>
+      <TableView fx:id="associe" layoutX="307.0" layoutY="547.0" onMouseClicked="#personelle_projet" prefHeight="200.0" prefWidth="529.0">
+        <columns>
+          <TableColumn fx:id="cnump" prefWidth="97.0" text="Num projet" />
+          <TableColumn fx:id="cidp" prefWidth="172.0" text="Id personnel" />
+            <TableColumn fx:id="cdd" prefWidth="110.0" text="Date debut " />
+            <TableColumn fx:id="cdf" prefWidth="149.0" text="Date fin " />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

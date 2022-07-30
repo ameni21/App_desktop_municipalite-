@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ajouter_doleances">
+   <children>
+      <TableView fx:id="table" layoutY="60.0" prefHeight="260.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="nom" prefWidth="75.0" text="nom" />
+          <TableColumn fx:id="prenom" prefWidth="75.0" text="prenom" />
+            <TableColumn fx:id="cin" prefWidth="75.0" text="cin" />
+            <TableColumn fx:id="numtel" prefWidth="75.0" text="num_tel" />
+            <TableColumn fx:id="adresse" prefWidth="75.0" text="adresse" />
+            <TableColumn fx:id="e_mail" prefWidth="75.0" text="e_mail" />
+            <TableColumn fx:id="description" prefWidth="75.0" text="description" />
+            <TableColumn fx:id="date" prefWidth="75.0" text="date" />
+        </columns>
+      </TableView>
+      <TextField layoutX="41.0" layoutY="22.0" onAction="#rechercher" promptText="rechercher" />
+      <Button layoutX="23.0" layoutY="336.0" mnemonicParsing="false" onAction="#ajouter" text="ajouter" />
+      <Button layoutX="126.0" layoutY="336.0" mnemonicParsing="false" onAction="#supprimer" text="supprimer" />
+      <Button layoutX="239.0" layoutY="336.0" mnemonicParsing="false" onAction="#modifier" text="modifier" />
+   </children>
+</AnchorPane>

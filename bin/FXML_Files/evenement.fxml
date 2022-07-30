@@ -1,0 +1,26 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="858.0" prefWidth="1187.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.EvenementController">
+   <children>
+      <JFXTextField fx:id="lab" layoutX="441.0" layoutY="49.0" />
+      <Button fx:id="rech" layoutX="623.0" layoutY="56.0" mnemonicParsing="false" onAction="#rechercher" prefHeight="31.0" prefWidth="104.0" text="Rechercher" />
+      <TableView fx:id="table" layoutX="21.0" layoutY="127.0" prefHeight="583.0" prefWidth="1109.0">
+        <columns>
+          <TableColumn fx:id="select" prefWidth="239.0" text="Select" />
+          <TableColumn fx:id="cdate" prefWidth="301.0" text="Date" />
+            <TableColumn fx:id="cnom" prefWidth="281.0" text="Nom" />
+            <TableColumn fx:id="clocation" prefWidth="280.0" text="Location" />
+        </columns>
+      </TableView>
+      <Button fx:id="ajout" layoutX="77.0" layoutY="777.0" mnemonicParsing="false" onAction="#ajouter" prefHeight="31.0" prefWidth="145.0" text="Ajouter" />
+      <Button fx:id="detail" layoutX="353.0" layoutY="768.0" mnemonicParsing="false" onAction="#detailler" prefHeight="31.0" prefWidth="145.0" text="Detail" />
+      <Button fx:id="supp" layoutX="675.0" layoutY="762.0" mnemonicParsing="false" onAction="#supprimer" prefHeight="31.0" prefWidth="145.0" text="supprimer" />
+      <Button fx:id="modif" layoutX="994.0" layoutY="761.0" mnemonicParsing="false" onAction="#modifier" prefHeight="31.0" prefWidth="145.0" text="Modifier" />
+   </children>
+</AnchorPane>
